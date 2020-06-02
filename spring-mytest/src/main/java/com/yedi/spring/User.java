@@ -1,6 +1,6 @@
 package com.yedi.spring;
 
-public class User {
+public class User extends Person {
 	private int uid;
 	private String username;
 	private String pwd;
@@ -50,7 +50,7 @@ public class User {
 
 	public User(){
 
-
+		System.out.println("user实例化完成");
 	}
 	public User(int uid, String username, String pwd, String tel, String addr) {
 		this.uid = uid;
